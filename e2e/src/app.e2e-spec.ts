@@ -1,23 +1,40 @@
-import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
-  let page: AppPage;
+import { browser, element, by, ElementFinder } from 'protractor';
+import { CalculatorPage } from './app.po';
 
+const calculatorPage = new CalculatorPage();
+
+describe('Protractor Demo App', function() {
+  const url: string = 'http://juliemr.github.io/protractor-demo/';
+  
   beforeEach(() => {
-    page = new AppPage();
+    browser.get(url);
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular-e2e-cucumber app is running!');
+  it('should have a title', function() {
+    expect(browser.getTitle()).toEqual('Super Calculator');
   });
 
-  afterEach(async () => {
-    // Assert that there are no errors emitted from the browser
-    const logs = await browser.manage().logs().get(logging.Type.BROWSER);
-    expect(logs).not.toContain(jasmine.objectContaining({
-      level: logging.Level.SEVERE,
-    } as logging.Entry));
+  it('should add one and two', () => {
+    calculatorPage.firstNumberInput.sendKeys(1);
+    calculatorPage.secondNumberInput.sendKeys(2);
+
+    calculatorPage.clickButton.click();
+
+    expect(calculatorPage.latestResult.getText()).toEqual('3');
+  });
+
+  it('should add four and six', () => {
+    calculatorPage.firstNumberInput.sendKeys(4);
+    calculatorPage.secondNumberInput.sendKeys(6);
+
+    calculatorPage.clickButton.click();
+
+    expect(calculatorPage.latestResult.getText()).toEqual('10');
+  });
+
+  it('should read the value from an input', () => {
+    calculatorPage.firstNumberInput.sendKeys(1);
+    expect(calculatorPage.firstNumberInput.getAttribute('value')).toEqual('1');
   });
 });

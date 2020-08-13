@@ -1,11 +1,15 @@
-import { browser, by, element } from 'protractor';
+import { ElementFinder, element, by } from 'protractor';
 
-export class AppPage {
-  navigateTo(): Promise<unknown> {
-    return browser.get(browser.baseUrl) as Promise<unknown>;
-  }
+export class CalculatorPage {
+  firstNumberInput: ElementFinder;
+  secondNumberInput: ElementFinder
+  clickButton: ElementFinder;
+  latestResult: ElementFinder;
 
-  getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  constructor() {
+    this.firstNumberInput = element(by.model('first'));
+    this.secondNumberInput = element(by.model('second'));
+    this.clickButton = element(by.id('gobutton'));
+    this.latestResult = element(by.binding('latest'));
   }
 }

@@ -1,4 +1,4 @@
-import { Given, When, Then, setDefaultTimeout, Before } from 'cucumber';
+import { Given, When, Then, setDefaultTimeout, Before, AfterAll } from 'cucumber';
 import { CalculatorPage } from '../src/calculator.page';
 import * as chai from 'chai';
 import * as chaiAsPromised from 'chai-as-promised'
@@ -39,4 +39,3 @@ When('I execute the operation', async function () {
 Then('The result should be {string}', async function (result) {
     expect(await calculatorPage.getResult()).to.equal(result);
 });
-

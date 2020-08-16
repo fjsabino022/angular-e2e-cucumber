@@ -26,7 +26,7 @@ exports.config = {
     // <boolean> invoke formatters without executing steps
     dryRun: false,// <boolean> invoke formatters without executing steps
     //make sure you are not using multi-capabilities    
-    format: 'json:./report/results.json'
+    format: [require.resolve('cucumber-pretty'), 'json:./report/results.json']
   },
   onPrepare() {
     require('ts-node').register({

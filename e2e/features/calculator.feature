@@ -1,6 +1,8 @@
 Feature: Super Calculator
 
-    The calculator allows you to execute math operations and see the results in a list.
+    As a user
+    I want to use the calculator to execute operations
+    So I can see the resutls
 
     Background:
         Given The Super calculator app is open

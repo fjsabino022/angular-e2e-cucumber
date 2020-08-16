@@ -1,6 +1,6 @@
 [
   {
-    "description": "    The calculator allows you to execute math operations and see the results in a list.",
+    "description": "    As a user\n    I want to use the calculator to execute operations\n    So I can see the resutls",
     "keyword": "Feature",
     "name": "Super Calculator",
     "line": 1,
@@ -8,252 +8,6 @@
     "tags": [],
     "uri": "e2e/features/calculator.feature",
     "elements": [
-      {
-        "id": "super-calculator;execute-math-operations-using-two-numbers",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Execute math operations using two numbers",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "The Super calculator app is open",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 534000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the title is 'Super Calculator'",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 34000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I have \"1\" as the first number",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 97000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I have \"+\" as the operation",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 133000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I have \"2\" as the second number",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 81000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I execute the operation",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 63000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "The result should be \"3\"",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1982000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "super-calculator;execute-math-operations-using-two-numbers",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Execute math operations using two numbers",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "The Super calculator app is open",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 375000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "the title is 'Super Calculator'",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 14000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I have \"-1\" as the first number",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 65000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "I have \"+\" as the operation",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 98000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "I have \"1\" as the second number",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 58000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I execute the operation",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:35"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 53000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "The result should be \"0\"",
-            "match": {
-              "location": "e2e/steps/calculator.steps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1967000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
       {
         "id": "super-calculator;execute-math-operations-using-two-numbers",
         "keyword": "Scenario",
@@ -270,98 +24,98 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 3000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 8,
             "name": "The Super calculator app is open",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 201000000
+              "duration": 588000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 9,
             "name": "the title is 'Super Calculator'",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 66000000
+              "duration": 19000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 12,
             "name": "I have \"1\" as the first number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 61000000
+              "duration": 76000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "I have \"-\" as the operation",
+            "line": 13,
+            "name": "I have \"+\" as the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 128000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
-            "name": "I have \"1\" as the second number",
+            "line": 14,
+            "name": "I have \"2\" as the second number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 79000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 15,
             "name": "I execute the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 82000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "The result should be \"0\"",
+            "line": 16,
+            "name": "The result should be \"3\"",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1948000000
+              "duration": 1897000000
             }
           },
           {
@@ -372,7 +126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -393,98 +147,98 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 8,
             "name": "The Super calculator app is open",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 384000000
+              "duration": 258000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 9,
             "name": "the title is 'Super Calculator'",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 26000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
-            "name": "I have \"2\" as the first number",
+            "line": 12,
+            "name": "I have \"-1\" as the first number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 98000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "I have \"*\" as the operation",
+            "line": 13,
+            "name": "I have \"+\" as the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 99000000
+              "duration": 138000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
-            "name": "I have \"4\" as the second number",
+            "line": 14,
+            "name": "I have \"1\" as the second number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 88000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 15,
             "name": "I execute the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 85000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "The result should be \"8\"",
+            "line": 16,
+            "name": "The result should be \"0\"",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1964000000
+              "duration": 1951000000
             }
           },
           {
@@ -495,7 +249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -522,92 +276,92 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 8,
             "name": "The Super calculator app is open",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 453000000
+              "duration": 260000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 9,
             "name": "the title is 'Super Calculator'",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 22000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
-            "name": "I have \"56\" as the first number",
+            "line": 12,
+            "name": "I have \"1\" as the first number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 75000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "I have \"/\" as the operation",
+            "line": 13,
+            "name": "I have \"-\" as the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 122000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
-            "name": "I have \"7\" as the second number",
+            "line": 14,
+            "name": "I have \"1\" as the second number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 62000000
+              "duration": 76000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 15,
             "name": "I execute the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 53000000
+              "duration": 60000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "The result should be \"8\"",
+            "line": 16,
+            "name": "The result should be \"0\"",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000000
+              "duration": 1919000000
             }
           },
           {
@@ -645,92 +399,92 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 8,
             "name": "The Super calculator app is open",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 359000000
+              "duration": 301000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 9,
             "name": "the title is 'Super Calculator'",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 19000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
-            "name": "I have \"5\" as the first number",
+            "line": 12,
+            "name": "I have \"2\" as the first number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 83000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
-            "name": "I have \"%\" as the operation",
+            "line": 13,
+            "name": "I have \"*\" as the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 106000000
+              "duration": 118000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 12,
-            "name": "I have \"5\" as the second number",
+            "line": 14,
+            "name": "I have \"4\" as the second number",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 70000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
+            "line": 15,
             "name": "I execute the operation",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 55000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "The result should be \"0\"",
+            "line": 16,
+            "name": "The result should be \"8\"",
             "match": {
               "location": "e2e/steps/calculator.steps.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1956000000
+              "duration": 1976000000
             }
           },
           {
@@ -742,6 +496,252 @@
             "result": {
               "status": "passed",
               "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "super-calculator;execute-math-operations-using-two-numbers",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Execute math operations using two numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "The Super calculator app is open",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the title is 'Super Calculator'",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have \"56\" as the first number",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I have \"/\" as the operation",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I have \"7\" as the second number",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I execute the operation",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "The result should be \"8\"",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1905000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "super-calculator;execute-math-operations-using-two-numbers",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Execute math operations using two numbers",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "The Super calculator app is open",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 380000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the title is 'Super Calculator'",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I have \"5\" as the first number",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I have \"%\" as the operation",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I have \"5\" as the second number",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I execute the operation",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "The result should be \"0\"",
+            "match": {
+              "location": "e2e/steps/calculator.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1965000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

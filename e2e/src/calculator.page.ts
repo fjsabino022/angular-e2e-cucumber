@@ -1,13 +1,16 @@
 import { ElementFinder, element, by, browser, ElementArrayFinder } from 'protractor';
+import { ProtractorLocator } from 'protractor/built/locators';
 
 export class CalculatorPage {
   private url: string = 'http://juliemr.github.io/protractor-demo/';
+  private repeater: ProtractorLocator = by.repeater("result in memory");
 
   private firstNumberInput: ElementFinder;
   private secondNumberInput: ElementFinder
   private clickButton: ElementFinder;
   private latestResult: ElementFinder;
   private operations: ElementArrayFinder;
+  private tableResults: ElementFinder;
 
   constructor() {
     this.firstNumberInput = element(by.model('first'));
@@ -15,6 +18,7 @@ export class CalculatorPage {
     this.clickButton = element(by.id('gobutton'));
     this.latestResult = element(by.binding('latest'));
     this.operations = element.all(by.options('value for (key, value) in operators'));
+    this.tableResults = element(by.className('table'));
   }
 
   async navigateTo(): Promise<any> {
@@ -44,6 +48,20 @@ export class CalculatorPage {
       });
     }).first();
   }
+
+  getNumberOfColumns(): Promise<number> {
+    return this.tableResults.all(by.css("th")).count() as Promise<number>;
+  }
+
+  getNumberOfRows(): Promise<number> {
+    return this.tableResults.all(this.repeater).count() as Promise<number>;
+  }
+
+  getColumnValueByRowIndex(columnIndex: number, rowIndex: number): Promise<string> {
+    let rowNumberFixed: number = rowIndex -1;
+    let columnNumberFixed: number = columnIndex - 1;
+    let row: ElementFinder = this.tableResults.element(this.repeater.row(rowNumberFixed));
+    let values: ElementArrayFinder = row.all(by.css("td"));
+    return values.get(columnNumberFixed).getText() as Promise<string>;
+  }
 }
-
-

@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Reports
+/report/cucumber_report.html
+/report/results.json

@@ -46,5 +46,5 @@ testem.log
 Thumbs.db
 
 # Reports
-.report/cucumber_report.html
-.report/results.json
+report/cucumber_report.html
+report/results.json
